@@ -1,0 +1,7 @@
+---- SIOCSIWSCAN Matches (6 in 3 files) ----
+Iwlib.c:	[SIOCSIWSCAN	- SIOCIWFIRST] = {
+Iwlib.c:      if((iw_set_ext(skfd, ifname, SIOCSIWSCAN, &wrq) < 0)
+Iwlist.c:      if(iw_set_ext(skfd, ifname, SIOCSIWSCAN, &wrq) < 0)
+Wireless.h: *	- AP scanning stuff (SIOCSIWSCAN and friends)
+Wireless.h: *	- Add optional scan request parameters for SIOCSIWSCAN
+Wireless.h:#define SIOCSIWSCAN	0x8B18		/* trigger scanning (list cells) */
